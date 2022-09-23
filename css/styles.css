@@ -45,7 +45,7 @@ h2 {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: var(--light-grey);
-  margin: 1em 0;
+  margin: 1em 0 0.6em 0;
 }
 
 p {
@@ -57,7 +57,8 @@ p {
 /*--------------- Car Section ---------------*/
 
 .car {
-  padding: 3em 2.2em;
+  padding: 3em 2.2em 8em 2.2em;
+  position: relative;
 }
 
 .sedans {
@@ -79,10 +80,10 @@ p {
 .btn {
   border-radius: 100px;
   padding: 0.8rem 1.6rem;
-
   background: var(--light-grey);
   font-family: "Lexend Deca", sans-serif;
-  margin-top: 2rem;
+  position: absolute;
+  bottom: 3em;
 }
 
 .sedans .btn {
@@ -151,7 +152,7 @@ p {
   }
 
   .car {
-    padding: 4em 3.2em;
+    padding: 4em 3.2em 7.8em 3.2em;
   }
 
   .sedans {
@@ -159,5 +160,9 @@ p {
   }
   .luxury {
     border-radius: 0 8px 8px 0;
+  }
+
+  .btn {
+    bottom: 3.6em;
   }
 }

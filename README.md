@@ -55,6 +55,26 @@ I used the following code in order to make the buttons stop moving when hovering
 }
 ```
 
+Also, in order to make sure the buttons were aligned to the bottom of the container at all times I used "position: relative" and position: absolute"":
+
+```css
+.car {
+  padding: 3em 2.2em 8em 2.2em;
+  position: relative;
+}
+```
+
+```css
+.btn {
+  border-radius: 100px;
+  padding: 0.8rem 1.6rem;
+  background: var(--light-grey);
+  font-family: "Lexend Deca", sans-serif;
+  position: absolute;
+  bottom: 3em;
+}
+```
+
 ## Author
 
 - Frontend Mentor - [@codercreative](https://www.frontendmentor.io/profile/codercreative)
