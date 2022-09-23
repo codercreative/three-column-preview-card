@@ -1,0 +1,163 @@
+/*--------------- General ---------------*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* PRIMARY */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* NEUTRAL*/
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --light-grey: hsl(0, 0%, 95%);
+  /* --white: hsl(0, 0%, 100%); */
+}
+
+html {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em auto;
+}
+
+main {
+  max-width: 80%;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: var(--light-grey);
+  margin: 1em 0;
+}
+
+p {
+  color: var(--transparent-white);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/*--------------- Car Section ---------------*/
+
+.car {
+  padding: 3em 2.2em;
+}
+
+.sedans {
+  background: var(--bright-orange);
+  border-radius: 8px 8px 0 0;
+}
+
+.suvs {
+  background: var(--dark-cyan);
+}
+
+.luxury {
+  background: var(--very-dark-cyan);
+  border-radius: 0 0 8px 8px;
+}
+
+/*--------------- Buttons ---------------*/
+
+.btn {
+  border-radius: 100px;
+  padding: 0.8rem 1.6rem;
+
+  background: var(--light-grey);
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 2rem;
+}
+
+.sedans .btn {
+  color: var(--bright-orange);
+  /* part of the coding to make the button stop moving when hovering */
+  border: 0.2px solid var(--bright-orange);
+}
+
+.sedans .btn:hover {
+  color: var(--light-grey);
+  border: 0.2px solid var(--light-grey);
+  background: var(--bright-orange);
+  transition: background-color 0.3s;
+}
+
+.suvs .btn {
+  color: var(--dark-cyan);
+  /* part of the coding to make the button stop moving when hovering */
+  border: 0.2px solid var(--dark-cyan);
+}
+
+.suvs .btn:hover {
+  color: var(--light-grey);
+  border: 0.2px solid var(--light-grey);
+  background: var(--dark-cyan);
+  transition: background-color 0.3s;
+}
+
+.luxury .btn {
+  color: var(--very-dark-cyan);
+  /* part of the coding to make the button stop moving when hovering */
+  border: 0.2px solid var(--very-dark-cyan);
+}
+
+.luxury .btn:hover {
+  color: var(--light-grey);
+  border: 0.2px solid var(--light-grey);
+  background: var(--very-dark-cyan);
+  transition: background-color 0.3s;
+}
+
+/*--------------- Footer ---------------*/
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--very-dark-cyan);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  color: var(--very-dark-cyan);
+}
+
+/*--------------- Media Queries ---------------*/
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    padding: 0 2em;
+  }
+
+  p {
+    margin-bottom: 3em;
+  }
+
+  .car {
+    padding: 4em 3.2em;
+  }
+
+  .sedans {
+    border-radius: 8px 0 0 8px;
+  }
+  .luxury {
+    border-radius: 0 8px 8px 0;
+  }
+}
