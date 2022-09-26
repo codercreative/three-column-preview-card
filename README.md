@@ -75,6 +75,22 @@ Also, in order to make sure the buttons were aligned to the bottom of the contai
 }
 ```
 
+Based on @vcarames feedback from frontendmentor.io, I have made the following updates:
+
+--> Make sure that decorative images use null [alt (empty) attribute values](https://www.a11yproject.com/checklist/#make-sure-that-decorative-images-use-null-alt-empty-attribute-values)
+
+--> Make sure to use anchor tags instead of buttons as links:
+
+```html
+<a href="#" class="btn">Learn More</a>
+```
+
+--> [Use @media(hover: hover)](https://dockyard.com/blog/2019/02/14/introducing-hover-hover) when hover is supported
+
+--> Make sure to [use em for my media queries](https://betterprogramming.pub/px-em-or-rem-examining-media-query-units-in-2021-e00cf37b91a9)
+
+--> And lastly, a [useful article about px vs em/rem](https://uxdesign.cc/why-designers-should-move-from-px-to-rem-and-how-to-do-that-in-figma-c0ea23e07a15)
+
 ## Author
 
 - Frontend Mentor - [@codercreative](https://www.frontendmentor.io/profile/codercreative)

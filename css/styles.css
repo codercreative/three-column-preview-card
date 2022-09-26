@@ -21,7 +21,7 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -76,14 +76,16 @@ p {
 }
 
 /*--------------- Buttons ---------------*/
-
 .btn {
   border-radius: 100px;
   padding: 0.8rem 1.6rem;
   background: var(--light-grey);
   font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
   position: absolute;
   bottom: 3em;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .sedans .btn {
@@ -92,24 +94,10 @@ p {
   border: 0.2px solid var(--bright-orange);
 }
 
-.sedans .btn:hover {
-  color: var(--light-grey);
-  border: 0.2px solid var(--light-grey);
-  background: var(--bright-orange);
-  transition: background-color 0.3s;
-}
-
 .suvs .btn {
   color: var(--dark-cyan);
   /* part of the coding to make the button stop moving when hovering */
   border: 0.2px solid var(--dark-cyan);
-}
-
-.suvs .btn:hover {
-  color: var(--light-grey);
-  border: 0.2px solid var(--light-grey);
-  background: var(--dark-cyan);
-  transition: background-color 0.3s;
 }
 
 .luxury .btn {
@@ -117,12 +105,29 @@ p {
   /* part of the coding to make the button stop moving when hovering */
   border: 0.2px solid var(--very-dark-cyan);
 }
+/*--------------- Hover States ---------------*/
 
-.luxury .btn:hover {
-  color: var(--light-grey);
-  border: 0.2px solid var(--light-grey);
-  background: var(--very-dark-cyan);
-  transition: background-color 0.3s;
+@media (hover: hover) {
+  .sedans .btn:hover {
+    color: var(--light-grey);
+    border: 0.2px solid var(--light-grey);
+    background: var(--bright-orange);
+    transition: background-color 0.3s;
+  }
+
+  .suvs .btn:hover {
+    color: var(--light-grey);
+    border: 0.2px solid var(--light-grey);
+    background: var(--dark-cyan);
+    transition: background-color 0.3s;
+  }
+
+  .luxury .btn:hover {
+    color: var(--light-grey);
+    border: 0.2px solid var(--light-grey);
+    background: var(--very-dark-cyan);
+    transition: background-color 0.3s;
+  }
 }
 
 /*--------------- Footer ---------------*/
@@ -139,7 +144,7 @@ p {
 
 /*--------------- Media Queries ---------------*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   main {
     display: flex;
     flex-direction: row;
